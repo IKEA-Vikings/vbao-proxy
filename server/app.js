@@ -2,15 +2,10 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const axios = require('axios');
-const cors = require('cors');
-const corsOptions = {
-  origin: /localhost:300[0-4]$/,
-  method: 'GET'
-};
 
 app.use('/:id', express.static('public'));
 
-app.get(`/api/sizes/:id`, cors(corsOptions), (req, res) => {
+app.get(`/api/sizes/:id`, (req, res) => {
   axios.get(`http://localhost:3002/api/sizes/${req.params.id}`)
       .then((result) => {
         console.log('PROXY-API CALL: ', result.data)
