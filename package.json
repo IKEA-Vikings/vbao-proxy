@@ -31,6 +31,7 @@
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "eslint-config-hackreactor": "github:reactorcore/eslint-config-hackreactor",
+    "morgan": "^1.10.0",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0"
   }
