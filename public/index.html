@@ -5,16 +5,19 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
   </head>
   <body>
-    <div id="root"></div>
+    <div id="header"></div>
+    <div id="images"></div>
     <div id="about"></div>
     <div id="product-size"></div>
-    <div id="app"></div>
+    <div id="review"></div>
+    <div id="footer"></div>
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="bundle.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
     <script src="http://localhost:3004/index.js"></script>
-    <script>ReactDOM.render(React.createElement(Review), document.getElementById('app'));</script>
-    <script>ReactDOM.render(React.createElement(ImagesService), document.getElementById('root'));</script>
+    <script>ReactDOM.render(React.createElement(Review), document.getElementById('review'));</script>
+    <script>ReactDOM.render(React.createElement(ImagesService), document.getElementById('images'));</script>
     <script src="http://localhost:3003/dist/bundle.js"></script>
     <script src="http://localhost:3002/bundle.js"></script>
   </body>
