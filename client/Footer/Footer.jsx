@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Container, Header, List, ListItem, Link} from '../styled-component-const.js';
+import {Container, Header, List, ListItem, Link} from './styles.js';
 
 function Footer(props) {
   return (
