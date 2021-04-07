@@ -7,6 +7,7 @@ export const Container = styled.div`
   bottom: 0;
   padding: 0 1.875rem;
   padding-top: 50px;
+  padding-bottom: 25px;
 
   font-family: ${FONT};
   color: ${GRAY};
