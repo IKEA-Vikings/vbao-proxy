@@ -4,15 +4,15 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faShoppingBasket, faBars} from '@fortawesome/free-solid-svg-icons';
 import {faUser, faHeart} from '@fortawesome/free-regular-svg-icons';
-
+import {Icon} from './styles_nav.js';
 
 function Nav(props) {
   return (
     <nav>
-      <span><FontAwesomeIcon icon={faUser} size="lg"/></span>
-      <span><FontAwesomeIcon icon={faHeart} size="lg"/></span>
-      <span><FontAwesomeIcon icon={faShoppingBasket} size="lg"/></span>
-      <span><FontAwesomeIcon icon={faBars} size="lg"/></span>
+      <Icon><FontAwesomeIcon icon={faUser} size="lg"/></Icon>
+      <Icon><FontAwesomeIcon icon={faHeart} size="lg"/></Icon>
+      <Icon><FontAwesomeIcon icon={faShoppingBasket} size="lg"/></Icon>
+      <Icon><FontAwesomeIcon icon={faBars} size="lg"/></Icon>
     </nav>
   );
 }
