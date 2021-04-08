@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Socials from './Socials.jsx';
-import {Container, Announce, Header, Section, ListWrapper, List, ListItem, Link, Join, AllLinks, Button} from './styles.js';
+import {Container, Announce, Header, Section, ListWrapper, List, ListItem, Link, Join, AllLinks, Button} from './styles_footer.js';
 
 function Footer(props) {
   return (
