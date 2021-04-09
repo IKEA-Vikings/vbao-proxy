@@ -13,6 +13,10 @@ export const Bar = styled.div`
   line-height: 50px;
   text-align: center;
   vertical-align: middle;
+
+  &:hover {
+    background-color: ${WHITE}
+  }
 `;
 
 export const Find = styled.span`
