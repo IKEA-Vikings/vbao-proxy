@@ -5,7 +5,7 @@ export const Bar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 25px;
+  margin: 10px 2px;
 
   font-family: ${FONT};
 `;
