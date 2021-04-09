@@ -6,6 +6,7 @@ export const Bar = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px 2px;
+  border-bottom: 1px solid ${EGGSHELL};
 
   font-family: ${FONT};
 `;
