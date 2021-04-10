@@ -14,11 +14,29 @@ app.get('/:id', (req, res) => {
 
 app.get(`/api/reviews/:id/details`, (req, res) => {
   console.log('GET REVIEWS');
-  axios.get(`http://localhost:3001/api/reviews/${req.params.id}/details`)
+  axios.get(`http://ec2-100-25-191-161.compute-1.amazonaws.com/bundle.js/api/reviews/${req.params.id}/details`)
       .then((result) => {
         res.send(result.data);
       })
       .catch((err) => console.error('GET REVIEWS FAILED: ', err));
+});
+
+app.get(`/api/reviews/:id/details`, (req, res) => {
+  console.log('GET PRODUCT SIZES');
+  axios.get(`http://18.221.34.3:3002/api/sizes/${req.params.id}/details`)
+      .then((result) => {
+        res.send(result.data);
+      })
+      .catch((err) => console.error('GET PRODUCT SIZES FAILED: ', err));
+});
+
+app.get(`/api/reviews/:id/details`, (req, res) => {
+  console.log('GET IMAGES');
+  axios.get(`http://54.67.28.46:4004/images/org/${req.params.id}/details`)
+      .then((result) => {
+        res.send(result.data);
+      })
+      .catch((err) => console.error('GET PRODUCT SIZES FAILED: ', err));
 });
 
 app.listen(PORT, () => {
