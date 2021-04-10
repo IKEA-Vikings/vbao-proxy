@@ -25,3 +25,7 @@ build/
 dist/
 
 public/bundle.js
+*.sh
+*.env
+*.pem
+*.cer
