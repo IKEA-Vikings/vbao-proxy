@@ -32,7 +32,7 @@ app.get(`/api/sizes/:id`, (req, res) => {
 
 app.get(`/images/org/:id`, (req, res) => {
   console.log('GET IMAGES');
-  axios.get(`http://54.67.28.46:4004/images/org/${req.params.id}`)
+  axios.get(`http://54.67.28.46:3004/images/org/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
       })
@@ -40,7 +40,7 @@ app.get(`/images/org/:id`, (req, res) => {
 });
 
 app.get(`/api/product/:id`, (req, res) => {
-  console.log('GET IMAGES');
+  console.log('GET ABOUT');
   axios.get(`http://3.86.58.21:3003/api/product/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
