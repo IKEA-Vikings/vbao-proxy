@@ -6,7 +6,7 @@ body {
 .primary-information {
   width: 90vw;
   display: grid;
-  margin: 0 25px;
+  margin: 0;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 5fr 1fr 1fr;
   grid-template-areas:
@@ -52,4 +52,7 @@ images-slide.images-row-slide, .images-table, .images-row-table {
 img.product-image-slide, img.product-image-table {
   max-height: 250px;
   max-width: 250px;
+}
+.product-info-section__button > .overlay {
+  z-index: 9;
 }
