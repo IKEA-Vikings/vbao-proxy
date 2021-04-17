@@ -3,7 +3,7 @@ import {FONT, GRAY, WHITE, EGGSHELL, FONT_MED, FONT_LG} from '../style-constants
 
 export const Bar = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 10px 2px;
   border-bottom: 1px solid ${EGGSHELL};

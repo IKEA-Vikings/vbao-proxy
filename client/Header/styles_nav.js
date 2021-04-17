@@ -14,6 +14,7 @@ export const Link = styled.a`
   line-height: 35px;
   text-align: center;
   vertical-align: middle;
+  color: black;
 
   width: 35px;
   height: 35px;
