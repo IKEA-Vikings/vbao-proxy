@@ -1,0 +1,7 @@
+globalConfig.json
+node_modules
+*.env
+*.pem
+*.git
+*.cer
+*.sh
