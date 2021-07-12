@@ -1,6 +1,6 @@
 # Vikea Proxy
 
-![Proxy Screenshot](https://fecvikingsvbao.s3.us-west-1.amazonaws.com/proxy_screenshot.png)
+![Proxy Screenshot](https://vbao-readme-screenshots.s3.us-west-1.amazonaws.com/fec_proxy_screenshot.png)
 
 This repo contains the proxy of an Ikea clone. The proxy serve the static contents of a clone Ikea item detail page and will serve each service by making requests to the service bundles.
 
