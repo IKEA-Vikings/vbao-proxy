@@ -43,3 +43,7 @@ From within the root directory:
 npm install -g webpack webpack-cli
 npm install
 ```
+
+### Web sequence Diagram
+
+![Web sequence diagram of the proxy](https://vbao-readme-screenshots.s3.us-west-1.amazonaws.com/fec_proxy_web-sequence.png)
