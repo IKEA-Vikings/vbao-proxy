@@ -12,17 +12,7 @@ app.get('/:id', (req, res) => {
   res.sendFile(path.resolve('public/index.html'));
 });
 
-// app.get(`/api/reviews/:id/details`, (req, res) => {
-//   console.log('GET REVIEWS');
-//   axios.get(`http://localhost:3001/api/reviews/${req.params.id}/details`)
-//       .then((result) => {
-//         res.send(result.data);
-//       })
-//       .catch((err) => console.error('GET REVIEWS FAILED: ', err));
-// });
-
 app.get(`/api/reviews/:id/details`, (req, res) => {
-  console.log('GET REVIEWS');
   axios.get(`http://100.25.191.161/api/reviews/${req.params.id}/details`)
       .then((result) => {
         res.send(result.data);
@@ -31,7 +21,6 @@ app.get(`/api/reviews/:id/details`, (req, res) => {
 });
 
 app.get(`/api/sizes/:id`, (req, res) => {
-  console.log('GET PRODUCT SIZES');
   axios.get(`http://18.221.34.3:3002/api/sizes/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
@@ -39,17 +28,7 @@ app.get(`/api/sizes/:id`, (req, res) => {
       .catch((err) => console.error('GET PRODUCT SIZES FAILED: ', err));
 });
 
-// app.get(`/api/product/:id`, (req, res) => {
-//   console.log('GET ABOUT');
-//   axios.get(`http://localhost:3003/api/product/${req.params.id}`)
-//       .then((result) => {
-//         res.send(result.data);
-//       })
-//       .catch((err) => console.error('GET ABOUT FAILED: ', err));
-// });
-
 app.get(`/api/product/:id`, (req, res) => {
-  console.log('GET ABOUT');
   axios.get(`http://3.86.58.21:3003/api/product/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
@@ -58,7 +37,6 @@ app.get(`/api/product/:id`, (req, res) => {
 });
 
 app.get(`/images/org/:id`, (req, res) => {
-  console.log('GET IMAGES');
   axios.get(`http://54.67.28.46:3004/images/org/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
@@ -67,7 +45,6 @@ app.get(`/images/org/:id`, (req, res) => {
 });
 
 app.get(`/similar-products-by-views/:id`, (req, res) => {
-  console.log('GET OTHERS ALSO LIKED');
   axios.get(`http://18.222.25.224:3005/similar-products-by-views/${req.params.id}`)
       .then((result) => {
         res.send(result.data);
